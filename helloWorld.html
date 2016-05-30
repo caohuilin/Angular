@@ -1,0 +1,53 @@
+<!doctype html>
+<html ng-app="phonecat">
+<head>
+    <script src="./angular-1.0.1.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./Controller.js"></script>
+    <title>helloWorld</title>
+</head>
+<body>
+    <!--Your name:<input type="text" ng-model="yourname" placeholder="World" />-->
+    <!--Hello {{yourname||'World'}}!-->
+
+
+    <!--<div ng-controller="PhoneListCtrl">-->
+    <!--<P>Totle: {{phones.length}}</P>-->
+    <!--</div>-->
+
+    <!--<ul>-->
+    <!--<li ng-repeat="i in [1,2,3,4]">{{i}}</li>-->
+    <!--</ul>-->
+
+    <!--<div class="container-fluid">-->
+        <!--<div class="row-fluid">-->
+            <!--<div class="span2">-->
+                <!--Search: <input ng-model="query"/>-->
+            <!--</div>-->
+            <!--<div class="span10">-->
+                <!--<ul class="phones">-->
+                    <!--<li ng-repeat="phone in phones | filter:query">-->
+                        <!--{{phone.name}}-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--Search：<input ng-model="query">-->
+    <!--Sort by:-->
+    <!--<select ng-model="orderProp">-->
+        <!--<option value="name">A</option>-->
+        <!--<option value="age">N</option>-->
+    <!--</select>-->
+    <!--<ul class="phones">-->
+        <!--<li ng-repeat="phone in phones | filter:query | orderBy:orderProp">-->
+            <!--{{phone.name}}-->
+            <!--{{phone.age}}-->
+        <!--</li>-->
+    <!--</ul>-->
+
+
+    <div ng-view></div>
+</body>
+</html>
